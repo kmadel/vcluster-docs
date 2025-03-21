@@ -23,6 +23,16 @@ When you enable the virtual scheduler, vCluster also enables these sync features
 
 Manually disabling the preceding features while using the virtual scheduler may result in incorrect pod scheduling.
 
+### Using a Custom Kubernetes Scheduler with vCluster
+
+In addition to using the standard Kubernetes scheduler, it is also possible to use a custom scheduler. The example below shows how to configure a vCluster to use the Volcano custom scheduler:
+
+```
+controlPlane:
+  advanced:
+    virtualScheduler:
+      enabled: true
+```
 
 <br/>
 :::info
